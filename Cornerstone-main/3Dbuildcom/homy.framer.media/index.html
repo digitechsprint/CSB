@@ -8788,6 +8788,7 @@
     [/Broadway/gi, '111-F-Block, Sector-8 Noida-201301'],
     [/\bNew York\b/gi, 'Noida']
   ];
+  const mapEmbedUrl = 'https://www.google.com/maps?q=111-F-Block%2C%20Sector-8%2C%20Noida-201301&z=17&output=embed';
 
   function cleanText(text) {
     let out = text || '';
@@ -8805,6 +8806,22 @@
     document.querySelectorAll('#__framer-badge-container,[data-framer-name="Crafted By"],[data-framer-name="Price"],.framer-1aoxwi1,.framer-ym18wf').forEach((el) => el.remove());
   }
 
+  function replaceLeafletMap() {
+    const map = document.querySelector('.leaflet-container');
+    if (!map || map.dataset.csbMapReplaced === '1') return;
+    map.dataset.csbMapReplaced = '1';
+    map.innerHTML = '';
+    map.style.padding = '0';
+    const iframe = document.createElement('iframe');
+    iframe.src = mapEmbedUrl;
+    iframe.title = '111-F-Block, Sector-8, Noida-201301';
+    iframe.loading = 'lazy';
+    iframe.referrerPolicy = 'no-referrer-when-downgrade';
+    iframe.allowFullscreen = true;
+    iframe.style.cssText = 'display:block;width:100%;height:100%;min-height:650px;border:0;';
+    map.appendChild(iframe);
+  }
+
   function walk(node) {
     if (!node) return;
     if (node.nodeType === Node.TEXT_NODE) {
@@ -8813,7 +8830,7 @@
       return;
     }
     if (node.nodeType !== Node.ELEMENT_NODE) return;
-    if (['SCRIPT', 'STYLE', 'NOSCRIPT', 'TEMPLATE'].includes(node.tagName)) return;
+    if (['SCRIPT', 'STYLE', 'NOSCRIPT', 'TEMPLATE', 'IFRAME'].includes(node.tagName)) return;
     if (node.id === '__framer-badge-container' || node.matches?.('[data-framer-name="Crafted By"],[data-framer-name="Price"],.framer-1aoxwi1,.framer-ym18wf')) {
       node.remove();
       return;
@@ -8827,6 +8844,7 @@
   function run() {
     scheduled = false;
     removeTargets();
+    replaceLeafletMap();
     if (document.body) walk(document.body);
   }
 
