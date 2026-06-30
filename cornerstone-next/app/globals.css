@@ -134,6 +134,9 @@ a {
   .cs-nav-links,
   .cs-nav-btn { display: none !important; }
   .cs-burger { display: flex !important; }
+  .cs-nav-bar { height: 86px !important; }
+  .cs-logo-lockup { transform: scale(.74); transform-origin: left center; }
+  .cs-filter-bar { top: 86px !important; }
   .cs-srow { grid-template-columns: 1fr !important; direction: ltr !important; }
   .cs-c-grid { grid-template-columns: 1fr !important; }
 }

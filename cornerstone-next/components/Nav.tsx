@@ -26,14 +26,15 @@ export default function Nav({ active }: { active: string }) {
   return (
     <>
       <nav
+        className="cs-nav-bar"
         style={{
           position: 'fixed',
           top: 0,
           left: 0,
           right: 0,
           zIndex: 300,
-          height: 72,
-          padding: '0 clamp(20px,4vw,48px)',
+          height: 112,
+          padding: '0 clamp(24px,4.5vw,64px)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
@@ -46,16 +47,16 @@ export default function Nav({ active }: { active: string }) {
         }}
       >
         {/* Logo */}
-        <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: 11, color: '#1c1c1a', textDecoration: 'none' }}>
-          <Logo size={38} />
+        <Link href="/" className="cs-logo-lockup" style={{ display: 'flex', alignItems: 'center', gap: 16, color: '#1c1c1a', textDecoration: 'none' }}>
+          <Logo size={86} variant="full" />
           <span style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.05 }}>
-            <span style={{ fontFamily: 'var(--font-playfair), serif', fontSize: 19, fontWeight: 600, letterSpacing: '.2px', textShadow: '0 0 16px rgba(247,246,243,.9)' }}>CornerStone</span>
-            <span style={{ fontSize: 9, fontWeight: 600, letterSpacing: 3, textTransform: 'uppercase', color: '#a89a6a', textShadow: '0 0 16px rgba(247,246,243,.9)' }}>Buildcom</span>
+            <span style={{ fontFamily: 'var(--font-playfair), serif', fontSize: 22, fontWeight: 600, letterSpacing: '.2px', textShadow: '0 0 16px rgba(247,246,243,.9)' }}>CornerStone</span>
+            <span style={{ fontSize: 10, fontWeight: 600, letterSpacing: 3, textTransform: 'uppercase', color: '#a89a6a', textShadow: '0 0 16px rgba(247,246,243,.9)' }}>Buildcom</span>
           </span>
         </Link>
 
         {/* Desktop links */}
-        <div className="cs-nav-links" style={{ display: 'flex', alignItems: 'center', gap: 'clamp(20px,2.4vw,34px)' }}>
+        <div className="cs-nav-links" style={{ display: 'flex', alignItems: 'center', gap: 'clamp(24px,2.6vw,40px)' }}>
           {NAV_LINKS.map((link) => (
             <Link
               key={link.name}

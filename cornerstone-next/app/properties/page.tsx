@@ -87,7 +87,7 @@ export default function PropertiesPage() {
       </section>
 
       {/* FILTERS */}
-      <div style={{ position: 'sticky', top: 72, zIndex: 120, background: 'rgba(247,246,243,.92)', backdropFilter: 'blur(12px)', borderBottom: '1px solid rgba(28,28,26,.08)', padding: '0 clamp(20px,4vw,48px)' }}>
+      <div className="cs-filter-bar" style={{ position: 'sticky', top: 112, zIndex: 120, background: 'rgba(247,246,243,.92)', backdropFilter: 'blur(12px)', borderBottom: '1px solid rgba(28,28,26,.08)', padding: '0 clamp(20px,4vw,48px)' }}>
         <div style={{ maxWidth: 1280, margin: '0 auto', display: 'flex', gap: 9, padding: '15px 0', overflowX: 'auto' }}>
           {CATEGORIES.map((cat) => {
             const on = activeCat === cat;
