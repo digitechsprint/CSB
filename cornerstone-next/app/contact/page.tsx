@@ -139,16 +139,16 @@ export default function ContactPage() {
               </span>
               <div>
                 <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 1, textTransform: 'uppercase', color: '#9a8e7c', marginBottom: 5 }}>Visit Us</div>
-                <div style={{ fontSize: 16, fontWeight: 700, color: '#1c1c1a', lineHeight: 1.4 }}>Max Towers, Sector 16B</div>
-                <div style={{ fontSize: 13, color: '#6f665a', marginTop: 2 }}>Noida 201301, Uttar Pradesh</div>
+                <div style={{ fontSize: 16, fontWeight: 700, color: '#1c1c1a', lineHeight: 1.4 }}>111, F-Block, Sector 8</div>
+                <div style={{ fontSize: 13, color: '#6f665a', marginTop: 2 }}>Noida, Uttar Pradesh</div>
               </div>
             </div>
 
             <div className="cs-reveal" data-d="240" style={{ position: 'relative', borderRadius: 18, overflow: 'hidden', height: 200, boxShadow: '0 18px 40px rgba(28,28,26,.1)' }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=72" alt="Sector 16B business district" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=72" alt="Sector 8 business district" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top,rgba(28,22,14,.55),transparent 60%)' }} />
-              <div style={{ position: 'absolute', left: 18, bottom: 16, color: '#fff', fontSize: 12, fontWeight: 700, letterSpacing: .6 }}>📍 Sector 16B Business District, Noida</div>
+              <div style={{ position: 'absolute', left: 18, bottom: 16, color: '#fff', fontSize: 12, fontWeight: 700, letterSpacing: .6 }}>📍 111, F-Block, Sector 8, Noida</div>
             </div>
           </div>
 
