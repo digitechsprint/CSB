@@ -48,10 +48,13 @@ export default function Footer({
 
         {/* Bottom bar */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 22, padding: '40px 8px 48px' }}>
-          <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: 14, color: '#1c1c1a', textDecoration: 'none' }}>
-            <Logo size={64} variant="full" />
-            <span style={{ fontFamily: 'var(--font-playfair), serif', fontSize: 18, fontWeight: 600 }}>CornerStone Buildcom</span>
-          </Link>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+            <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: 14, color: '#1c1c1a', textDecoration: 'none' }}>
+              <Logo size={64} variant="full" />
+              <span style={{ fontFamily: 'var(--font-playfair), serif', fontSize: 18, fontWeight: 600 }}>CornerStone Buildcom</span>
+            </Link>
+            <div style={{ fontSize: 12.5, color: '#9a8e7c', paddingLeft: 78 }}>111, F-Block, Sector 8, Noida</div>
+          </div>
           <div style={{ display: 'flex', gap: 26, flexWrap: 'wrap' }}>
             {[['Home', '/'], ['About', '/about'], ['Properties', '/properties'], ['Services', '/services'], ['Contact', '/contact']].map(([label, href]) => (
               <Link key={label} href={href} style={{ fontSize: 13, fontWeight: 500, color: '#6f665a', textDecoration: 'none' }}>{label}</Link>
