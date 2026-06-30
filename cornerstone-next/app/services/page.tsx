@@ -61,13 +61,23 @@ export default function ServicesPage() {
       <Nav active="Services" />
 
       {/* HERO */}
-      <section style={{ padding: 'clamp(120px,16vw,168px) clamp(20px,4vw,48px) clamp(48px,6vw,72px)', background: 'linear-gradient(170deg,#efeae1,#f7f6f3)', textAlign: 'center' }}>
-        <div style={{ maxWidth: 760, margin: '0 auto' }}>
-          <div className="cs-reveal" style={{ display: 'inline-flex', alignItems: 'center', gap: 9, fontSize: 11, fontWeight: 700, letterSpacing: 2.5, textTransform: 'uppercase', color: '#a07e34', marginBottom: 20 }}>
-            <span style={{ width: 24, height: 1, background: '#c8973d' }} />Our Services
+      <section style={{ padding: 'clamp(120px,16vw,168px) clamp(20px,4vw,48px) clamp(56px,7vw,90px)', background: 'linear-gradient(170deg,#efeae1,#f7f6f3)' }}>
+        <div style={{ maxWidth: 1280, margin: '0 auto', display: 'grid', gridTemplateColumns: '1.05fr .95fr', gap: 'clamp(40px,6vw,80px)', alignItems: 'center' }} className="cs-split">
+          <div>
+            <div className="cs-reveal" style={{ display: 'flex', alignItems: 'center', gap: 9, fontSize: 11, fontWeight: 700, letterSpacing: 2.5, textTransform: 'uppercase', color: '#a07e34', marginBottom: 20 }}>
+              <span style={{ width: 24, height: 1, background: '#c8973d' }} />Our Services
+            </div>
+            <h1 className="cs-reveal" data-d="80" style={{ fontFamily: 'var(--font-playfair), serif', fontSize: 'clamp(42px,6.2vw,84px)', fontWeight: 600, lineHeight: 1, letterSpacing: -1, margin: '0 0 20px' }}>Advisory, end to end</h1>
+            <p className="cs-reveal" data-d="160" style={{ fontSize: 17, lineHeight: 1.7, color: '#6f665a', maxWidth: 460, margin: 0 }}>Research-backed insight, better options, and confident decisions — plans built around your real estate goals.</p>
           </div>
-          <h1 className="cs-reveal" data-d="80" style={{ fontFamily: 'var(--font-playfair), serif', fontSize: 'clamp(42px,6.2vw,84px)', fontWeight: 600, lineHeight: 1, letterSpacing: -1, margin: '0 0 20px' }}>Advisory, end to end</h1>
-          <p className="cs-reveal" data-d="160" style={{ fontSize: 17, lineHeight: 1.7, color: '#6f665a', margin: '0 auto', maxWidth: 520 }}>Research-backed insight, better options, and confident decisions — plans built around your real estate goals.</p>
+          <div className="cs-reveal" data-d="120" style={{ position: 'relative', borderRadius: 24, overflow: 'hidden', aspectRatio: '4/5', boxShadow: '0 30px 70px rgba(28,28,26,.16)' }}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=900&q=72" alt="Modern commercial advisory" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <div style={{ position: 'absolute', bottom: 20, left: 20, background: '#1c1c1a', color: '#f7f6f3', padding: '16px 22px', borderRadius: 14, textAlign: 'center' }}>
+              <div style={{ fontFamily: 'var(--font-playfair), serif', fontSize: 30, fontWeight: 600, lineHeight: 1, color: '#d9ad5a' }}>4</div>
+              <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: 1.5, textTransform: 'uppercase', opacity: .7, marginTop: 4 }}>Core Services</div>
+            </div>
+          </div>
         </div>
       </section>
 
