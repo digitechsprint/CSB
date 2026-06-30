@@ -171,11 +171,13 @@ export default function HomePage() {
           <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '0 24px', zIndex: 7, pointerEvents: 'none' }}>
             <div style={{ position: 'relative', width: '100%', maxWidth: 980 }}>
               <div id="cs-copy1" style={{ position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%,-50%)', width: '100%' }}>
-                <div style={{ display: 'inline-flex', alignItems: 'center', gap: 9, fontSize: 12, fontWeight: 700, letterSpacing: 3, textTransform: 'uppercase', color: '#a07e34', marginBottom: 18, textShadow: '0 0 30px rgba(247,246,243,.9)' }}>
-                  <span style={{ width: 8, height: 8, borderRadius: '50%', background: '#c8973d' }} />Strategic Real Estate Advisory
+                <div style={{ display: 'inline-block', background: 'rgba(247,246,243,.66)', backdropFilter: 'blur(14px)', WebkitBackdropFilter: 'blur(14px)', borderRadius: 28, padding: 'clamp(28px,4.5vw,56px) clamp(28px,5vw,64px)' }}>
+                  <div style={{ display: 'inline-flex', alignItems: 'center', gap: 9, fontSize: 12, fontWeight: 700, letterSpacing: 3, textTransform: 'uppercase', color: '#a07e34', marginBottom: 18 }}>
+                    <span style={{ width: 8, height: 8, borderRadius: '50%', background: '#c8973d' }} />Strategic Real Estate Advisory
+                  </div>
+                  <h1 style={{ fontFamily: 'var(--font-playfair), serif', fontSize: 'clamp(46px,8vw,108px)', fontWeight: 600, lineHeight: .96, letterSpacing: -1.5, margin: 0, color: '#1c1c1a' }}>Build a future-<br />ready portfolio</h1>
+                  <p style={{ fontSize: 'clamp(14px,1.6vw,18px)', fontWeight: 500, letterSpacing: 3, textTransform: 'uppercase', color: '#6f665a', margin: '22px 0 0' }}>Commercial · Residential · Industrial</p>
                 </div>
-                <h1 style={{ fontFamily: 'var(--font-playfair), serif', fontSize: 'clamp(46px,8vw,108px)', fontWeight: 600, lineHeight: .96, letterSpacing: -1.5, margin: 0, color: '#1c1c1a', textShadow: '0 2px 4px rgba(247,246,243,.5), 0 0 60px rgba(247,246,243,.8)' }}>Build a future-<br />ready portfolio</h1>
-                <p style={{ fontSize: 'clamp(14px,1.6vw,18px)', fontWeight: 500, letterSpacing: 3, textTransform: 'uppercase', color: '#6f665a', margin: '22px 0 0', textShadow: '0 0 40px rgba(247,246,243,.9)' }}>Commercial · Residential · Industrial</p>
               </div>
               <div id="cs-copy2" style={{ position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%,-50%)', width: '100%', opacity: 0 }}>
                 <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: 3, textTransform: 'uppercase', color: '#d9ad5a', marginBottom: 14 }}>Max Estate 105 · Sector 105, Noida</div>
