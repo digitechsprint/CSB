@@ -139,6 +139,7 @@ a {
   .cs-filter-bar { top: 86px !important; }
   .cs-srow { grid-template-columns: 1fr !important; direction: ltr !important; }
   .cs-c-grid { grid-template-columns: 1fr !important; }
+  .cs-fgrid { grid-template-columns: 1fr 1fr !important; }
 }
 @media (max-width: 560px) {
   .cs-svc-grid,
@@ -146,4 +147,5 @@ a {
   .cs-proc,
   .cs-who-grid { grid-template-columns: 1fr !important; }
   .cs-form-row { grid-template-columns: 1fr !important; }
+  .cs-fgrid { grid-template-columns: 1fr !important; }
 }
