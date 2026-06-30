@@ -72,7 +72,7 @@ export default function ServicesPage() {
           </div>
           <div className="cs-reveal" data-d="120" style={{ position: 'relative', borderRadius: 24, overflow: 'hidden', aspectRatio: '4/5', boxShadow: '0 30px 70px rgba(28,28,26,.16)' }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=900&q=72" alt="Modern commercial advisory" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <img src="https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=900&q=72" alt="Modern skyscraper" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             <div style={{ position: 'absolute', bottom: 20, left: 20, background: '#1c1c1a', color: '#f7f6f3', padding: '16px 22px', borderRadius: 14, textAlign: 'center' }}>
               <div style={{ fontFamily: 'var(--font-playfair), serif', fontSize: 30, fontWeight: 600, lineHeight: 1, color: '#d9ad5a' }}>4</div>
               <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: 1.5, textTransform: 'uppercase', opacity: .7, marginTop: 4 }}>Core Services</div>
