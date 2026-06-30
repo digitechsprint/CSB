@@ -48,8 +48,8 @@ export default function Footer({
 
         {/* Bottom bar */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 22, padding: '40px 8px 48px' }}>
-          <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: 11, color: '#1c1c1a', textDecoration: 'none' }}>
-            <Logo size={36} />
+          <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: 14, color: '#1c1c1a', textDecoration: 'none' }}>
+            <Logo size={64} variant="full" />
             <span style={{ fontFamily: 'var(--font-playfair), serif', fontSize: 18, fontWeight: 600 }}>CornerStone Buildcom</span>
           </Link>
           <div style={{ display: 'flex', gap: 26, flexWrap: 'wrap' }}>
