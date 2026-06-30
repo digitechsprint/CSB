@@ -2,7 +2,7 @@ const SRC_W = 1080;
 const SRC_H = 1350;
 const CROP = 680;
 const OFFSET_X = 200;
-const OFFSET_Y = 270;
+const OFFSET_Y = 240;
 
 export default function Logo({ size = 40 }: { size?: number }) {
   const scale = size / CROP;
